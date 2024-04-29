@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --bg-color: #22212c;
+    --bg-icons: #302f3d;
+    --bg-link: #CB92B1;
+    --text-color: #837e9f;
+}
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 1.6rem;
+
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+nav > * {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-icons);
+    max-width: 34rem;
+    border-radius: 2rem;
+    margin: 4rem 4rem 3rem;
+}
+
+.profile {
+    align-items: center;
+    padding: 3.2rem 7.6rem 4.8rem;
+}
+
+.profile img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    outline: 2px solid greenyellow;
+    margin-bottom: 3rem;
+}
+
+strong {
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.profile > span {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    line-height: 1.6;
+}
+
+.socialLinks img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.socialLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 4rem;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.tech > h2 {
+    margin: 3rem 2rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.tech ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    gap: 1.5rem;
+    margin: 2rem 3rem 3rem;
+}
+
+.tech ul > li {
+    background-color: var(--bg-link);
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .6rem 0 .7rem;
+    border-radius: 30px;
+}
