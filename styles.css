@@ -19,7 +19,16 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-size: 1.6rem;
+}
 
+.wrapper {
+    margin: 4rem auto;
+    padding: 0 4rem;
+    
+    display: grid;
+    grid-template-columns: 348px 1fr;
+    gap: 4rem;
+    align-items: flex-start;
 }
 
 a {
@@ -27,16 +36,20 @@ a {
     color: currentColor;
 }
 
-nav > * {
+.sidebar {
     display: flex;
     flex-direction: column;
+    gap: 3rem;
+}
+
+.sidebar > * {
     background: var(--bg-icons);
-    max-width: 34rem;
     border-radius: 2rem;
-    margin: 4rem 4rem 3rem;
 }
 
 .profile {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 3.2rem 7.6rem 4.8rem;
 }
@@ -73,7 +86,7 @@ strong {
     padding: 3rem 4rem;
 }
 
-figure {
+.socialLinks figure {
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -81,10 +94,14 @@ figure {
     font-weight: 400;
 }
 
+.tech {
+    padding: 3rem 2rem 3rem;
+}
+
 .tech > h2 {
-    margin: 3rem 2rem 0;
     font-size: 2rem;
     font-weight: bold;
+    margin-bottom: 2rem;
 }
 
 .tech ul {
@@ -92,7 +109,6 @@ figure {
     grid-template-columns: repeat(3, 1fr);
     list-style: none;
     gap: 1.5rem;
-    margin: 2rem 3rem 3rem;
 }
 
 .tech ul > li {
@@ -104,4 +120,173 @@ figure {
     font-weight: bold;
     padding: .6rem 0 .7rem;
     border-radius: 30px;
+}
+
+.exp h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.exp {
+    padding: 3rem 2rem 3rem;
+}
+
+.exp ul {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4rem 0;
+    gap: 2rem;
+}
+
+.exp ul li strong {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.exp ul li > p {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.exp ul li > span {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* main */
+.feed {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.feed section {
+    background: var(--bg-icons);
+    border-radius: 2rem;
+}
+
+.myProjects {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.folderProjects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-icons);
+    border-radius: 2rem;
+    padding: 3rem;
+    gap: 2rem;
+}
+
+.projects header {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.projects header strong {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.projects p {
+    font-size: 1.4rem;
+    font-weight: 400;
+} 
+
+.test footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reaction {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.reaction figure {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.projects img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.projects span {
+    font-size: 1.4rem;
+}
+
+.recentPosts h2 {
+    padding: 3rem;
+}
+
+.post {
+    display: flex;
+    padding: 3rem 3rem 4.2rem;
+    gap: 2rem;
+}
+
+.post img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+}
+
+.post h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.post span {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.description {
+    margin-top: 2.8rem;
+}
+
+.description p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.description a {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 87.5%;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .test {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .post {
+        flex-direction: column;
+        align-items: center;
+    }
 }
